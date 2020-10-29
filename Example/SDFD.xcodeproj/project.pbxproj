@@ -17,6 +17,7 @@
 		607FACE51AFB9204008FA782 /* SDFD_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDFD_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		9C099480254AC7A90006CA65 /* SDFD_Tests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SDFD_Tests copy-Info.plist"; path = "/Users/soso/Pods/SDFD/Example/SDFD_Tests copy-Info.plist"; sourceTree = "<absolute>"; };
 		B0B8548021A52A14E6471400 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B2D757A8BB525B12F01AD8A8 /* Pods_SDFD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDFD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1AA4C418D9DF2BBBEEED09 /* Pods-SDFD_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDFD_Tests.release.xcconfig"; path = "Target Support Files/Pods-SDFD_Tests/Pods-SDFD_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 				607FACD11AFB9204008FA782 /* Products */,
 				2D203C2B41FFF91FF99FF3C7 /* Pods */,
 				7953733CB2B8848751F024AF /* Frameworks */,
+				9C099480254AC7A90006CA65 /* SDFD_Tests copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
