@@ -75,7 +75,7 @@ public final class SecondScheduler: NSObject {
                            selector: #selector(SecondScheduler.timerScheduled),
                            userInfo: nil,
                            repeats: true)
-        RunLoop.current.add(self.timer, forMode: .commonModes)
+        RunLoop.current.add(self.timer, forMode: .common)
         
         addApplicationOberver()
     }
@@ -109,13 +109,13 @@ public final class SecondScheduler: NSObject {
 extension SecondScheduler {
     
     private func removeApplicationOberver() {
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIApplication.didBecomeActiveNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIApplication.didEnterBackgroundNotification, object: nil)
     }
     
     private func addApplicationOberver() {
-        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActive(_:)), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidEnterBackground(_:)), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActive(_:)), name: UIApplication.didBecomeActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidEnterBackground(_:)), name: UIApplication.didEnterBackgroundNotification, object: nil)
     }
     
     @objc

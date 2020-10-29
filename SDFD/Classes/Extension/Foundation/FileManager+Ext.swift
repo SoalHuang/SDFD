@@ -42,7 +42,6 @@ extension URL: FilePathCovertible {
 public extension FilePathCovertible {
     
     /// 如果是文件夹，则返回true
-    @available(iOS 9.0, *)
     var isDirectoryPath: Bool {
         return self.asFileURL().hasDirectoryPath
     }

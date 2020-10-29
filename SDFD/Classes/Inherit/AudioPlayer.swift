@@ -156,11 +156,11 @@ open class AudioPlayer: NSObject, AudioPlayerType, AVAudioPlayerDelegate {
     private var routeChangeToken: NSObjectProtocol?
     
     private func handleNotifications() {
-        let interruptionName = NSNotification.Name.AVAudioSessionInterruption
+        let interruptionName = AVAudioSession.interruptionNotification
         interruptionToken = NotificationCenter.default.sd.addObserver(forName: interruptionName) { [weak self] in
             self?.handleAudioInterrupution($0)
         }
-        let routeChangeName = NSNotification.Name.AVAudioSessionRouteChange
+        let routeChangeName = AVAudioSession.routeChangeNotification
         routeChangeToken = NotificationCenter.default.sd.addObserver(forName: routeChangeName) { [weak self] in
             self?.handleAudioSessionRouteChange($0)
         }
