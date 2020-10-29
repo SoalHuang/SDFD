@@ -1,0 +1,6 @@
+use_frameworks!
+target 'SDFD_Tests' do
+  pod 'SDFD', :path => '../'
+  
+  
+end
