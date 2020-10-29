@@ -1,0 +1,16 @@
+PODS:
+  - SDFD (0.1.0)
+
+DEPENDENCIES:
+  - SDFD (from `../`)
+
+EXTERNAL SOURCES:
+  SDFD:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SDFD: 38ecc81313fe60382c3cac777f615757f95ee46a
+
+PODFILE CHECKSUM: ddba391f0b52c186ab8ea9fafb3a5447bccb977b
+
+COCOAPODS: 1.9.3

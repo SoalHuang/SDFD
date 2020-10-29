@@ -1,0 +1,6 @@
+framework module SDFD {
+  umbrella header "SDFD-umbrella.h"
+
+  export *
+  module * { export * }
+}
